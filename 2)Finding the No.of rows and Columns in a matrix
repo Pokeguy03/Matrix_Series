@@ -1,0 +1,22 @@
+#matrix
+row=int(input())
+col=int(input())
+matrix=[]
+for i in range(row):
+    rows=[]
+    for j in range(col):
+        val=int(input())
+        rows.append(val)
+    matrix.append(rows)
+print(len(rows))#finding the no.of rows
+print(len(matrix[0]))#finding the no.of columns
+
+o/p:
+2
+2
+1
+2
+3
+4
+2(row)
+2(col)
