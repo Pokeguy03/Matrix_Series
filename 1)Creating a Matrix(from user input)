@@ -1,0 +1,20 @@
+#matrix
+row=int(input())
+col=int(input())
+matrix=[]
+for i in range(row):
+    rows=[]
+    for j in range(col):
+        val=int(input())
+        rows.append(val)
+    matrix.append(rows)
+# print(matrix)
+for i in matrix:
+    print(i)
+
+o/p:
+8
+9
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
