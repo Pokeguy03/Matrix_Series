@@ -1,0 +1,41 @@
+#using One loops
+#for primary diagonal:
+matrix=[[1,2,3],[4,5,6],[7,8,9]]
+for i in range(len(matrix)):
+    print(matrix[i][i])
+    
+# for secondary diagonal:
+
+matrix=[[1,2,3],[4,5,6],[7,8,9]]
+n=len(matrix)
+for i in range(len(matrix)):
+    print(matrix[i][n-1-i])
+
+
+
+
+#using two loops
+#for primary diagonal:
+matrix=[[1,2,3],[4,5,6],[7,8,9]]
+for i in range(len(matrix)):
+    for j in range(len(matrix[i])):
+        if i==j:
+            print(matrix[i][j])
+
+#for Secondary Diagonal:
+n=len(matrix)
+for i in range(len(matrix)):
+    for j in range(len(matrix[i])):
+        if i+j==n-1:
+            print(matrix[i][j])
+
+
+o/p for primary:
+1
+5
+9
+
+o/p for secondary:
+3
+5
+7
