@@ -1,0 +1,23 @@
+matrix=[[1,2,3],[4,5,6],[7,8,9]]
+for i in matrix:
+    print(sum(i))
+
+o/p:
+6
+15
+24
+
+
+#for columns
+s=len(matrix[0])
+for row in range(s):
+    column=0
+    for col in range(len(matrix)):
+        column=column+matrix[col][row]
+    print(column)
+    
+o/p:
+12
+15
+18
+
