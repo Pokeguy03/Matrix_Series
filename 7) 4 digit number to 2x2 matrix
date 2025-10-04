@@ -1,0 +1,32 @@
+# Read rows and columns
+n, m = map(int, input().split())
+
+# Read matrix
+matrix = [list(map(int, input().split())) for _ in range(n)]
+
+# Print each row in 2-line format
+for row in matrix:
+    top_line = []
+    bottom_line = []
+    for num in row:
+        num = str(num)
+        top_line.extend([num[0], num[1]])
+        bottom_line.extend([num[2], num[3]])
+    print(' '.join(top_line))
+    print(' '.join(bottom_line))
+
+o/p:
+4 3
+3625 7736 6263
+3663 5678 3325
+8865 6657 7853
+5675 5573 8864
+3 6 7 7 6 2
+2 5 3 6 6 3
+3 6 5 6 3 3     2x2 matrix
+6 3 7 8 2 5
+8 8 6 6 7 8
+6 5 5 7 5 3
+5 6 5 5 8 8
+7 5 7 3 6 4
+
