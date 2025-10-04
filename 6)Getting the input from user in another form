@@ -1,0 +1,18 @@
+r,c=map(int,input().split())
+matrix=[]
+for i in range(r):
+    row=list(map(int,input().split()))
+    matrix.append(row)
+for j in matrix:
+    print(j)
+
+o/p:
+4 3
+1234 4352 6456 4326 
+5478 9495 4984 4020 
+8297 7892 7937 8023
+5374 9793 9395 9375
+[1234, 4352, 6456, 4326]
+[5478, 9495, 4984, 4020]
+[8297, 7892, 7937, 8023]
+[5374, 9793, 9395, 9375]
